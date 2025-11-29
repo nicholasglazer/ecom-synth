@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Generated data (can be regenerated)
+data/csv/*
+data/json/*
+data/sql/*
+!data/csv/.gitkeep
+!data/json/.gitkeep
+!data/sql/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local

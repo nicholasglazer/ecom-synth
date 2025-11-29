@@ -1,0 +1,40 @@
+{
+  "name": "ecom-synth",
+  "version": "1.0.0",
+  "description": "Synthetic e-commerce conversion funnel data generator for AI/ML training and analytics",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node src/index.js",
+    "generate:small": "node src/index.js --scale small",
+    "generate:medium": "node src/index.js --scale medium",
+    "generate:large": "node src/index.js --scale large",
+    "test": "node tests/test-generator.js",
+    "export:csv": "node src/index.js --format csv",
+    "export:json": "node src/index.js --format json",
+    "export:sql": "node src/index.js --format sql",
+    "export:all": "node src/index.js --format all",
+    "clean": "rm -rf data/csv/* data/json/* data/sql/*"
+  },
+  "keywords": [
+    "synthetic-data",
+    "e-commerce",
+    "conversion-funnel",
+    "machine-learning",
+    "analytics",
+    "retail",
+    "postgresql"
+  ],
+  "author": "JKO",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "uuid": "^9.0.1",
+    "csv-stringify": "^6.4.4",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
